@@ -25,7 +25,7 @@ EightArms performs automated reconnaissance on GitHub user accounts by analyzing
 - **Configurable Speed Profiles** - Adjustable scanning intensity from rapid reconnaissance to thorough investigation
 - **Concurrent Processing** - Multi-threaded analysis for efficient large-scale data collection
 - **Rate Limiting Protection** - Built-in delays and retry mechanisms to avoid detection and service disruption
-- **Anonymity Preservation** - Operates through standard HTTP requests without requiring authentication
+- **Anonymity Preservation** - Operates through standard HTTP requests with header randomisation without requiring authentication
 
 ## Installation
 
@@ -67,7 +67,7 @@ eightarms <target_username> --speed slow
 
 #### Speed Profiles
 
-| Profile | Request Delay | Pages/Repo | Commits Analyzed | Concurrent Workers | Application |
+| Profile | Request Delay | Pages/Repo | Commits Analysed | Concurrent Workers | Application |
 |---------|---------------|------------|------------------|-------------------|-------------|
 | `fast` | 0.2-0.8s | 2 | First/Last 5 | 6 | Quick reconnaissance |
 | `medium` | 0.5-1.5s | 3 | First/Last 10 | 4 | Standard investigation |
@@ -76,7 +76,7 @@ eightarms <target_username> --speed slow
 #### Advanced Configuration
 ```bash
 # Repository scope control
---max-repos N                 # Maximum repositories to analyze (default: 10)
+--max-repos N                 # Maximum repositories to analyse (default: 10)
 --pages N                     # Commit pages per repository (default: 3)
 
 # Commit selection patterns
@@ -89,9 +89,9 @@ eightarms <target_username> --speed slow
 
 #### Commit Selection Formats
 - `all` - Process complete commit history (resource intensive)
-- `15` - Analyze first 15 commits only
+- `15` - Analyse first 15 commits only
 - `[10,10]` - Process first 10 and last 10 commits (recommended)
-- `[20,0]` - Analyze first 20 commits only
+- `[20,0]` - Analyse first 20 commits only
 - `[0,5]` - Process last 5 commits only
 
 ### Operational Examples
@@ -120,7 +120,7 @@ EightArms operates through a structured reconnaissance methodology:
 2. **Commit History Analysis** - Systematically retrieves commit metadata from repository timelines
 3. **Patch Acquisition** - Downloads commit patches containing author and contributor information
 4. **Email Extraction** - Parses commit headers using pattern matching algorithms
-5. **Data Sanitization** - Applies filtering rules to remove invalid and system-generated addresses
+5. **Data Sanitisation** - Applies filtering rules to remove invalid and system-generated addresses
 6. **Intelligence Compilation** - Consolidates unique email addresses with source attribution
 
 ### Information Sources
@@ -187,7 +187,7 @@ CONFIGURATION
 Target: security_researcher
 
 Found 12 repositories for security_researcher
-Analyzing 89 commit patches...
+Analysing 89 commit patches...
 Analysed 89 patches
 
 RESULTS
