@@ -150,17 +150,7 @@ EightArms maintains operational security through several mechanisms:
 - **User Agent Rotation** - Multiple browser identities to avoid fingerprinting
 - **No Persistent Sessions** - Each request appears isolated without correlation markers
 
-#### Network Anonymity Considerations
-
 **Important: EightArms does not provide IP address anonymity or network-level operational security.**
-
-While EightArms maintains application-level anonymity through:
-- Standard HTTP requests without authentication
-- User agent rotation and header randomisation
-- Configurable request timing to mimic human behaviour
-- No persistent session correlation
-
-**Your IP address and network traffic remain visible to GitHub and network monitoring systems.**
 
 For operational security during investigations:
 - **Use a VPN service** to mask your IP address and geographic location
