@@ -59,7 +59,7 @@ def main():
         filtered_emails = filter_github_emails(emails)
         
         # results output
-        print(f"\n{Colors.BOLD}{Colors.GREEN}✨ RESULTS{Colors.RESET}")
+        print(f"\n{Colors.BOLD}{Colors.GREEN}RESULTS{Colors.RESET}")
         print(f"{Colors.BLUE}{'═' * 50}{Colors.RESET}")
         
         if filtered_emails:
