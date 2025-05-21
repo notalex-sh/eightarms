@@ -311,7 +311,7 @@ class GitHubWebScraperCLI(GitHubWebScraper):
         self.progress.set_total(total_commits_to_process)
         
         print(f"{Colors.BLUE}Found {Colors.YELLOW}{len(repos)}{Colors.BLUE} repositories for {Colors.PURPLE}{username}{Colors.RESET}")
-        print(f"{Colors.GREEN}Analyzing {Colors.YELLOW}{total_commits_to_process}{Colors.GREEN} commit patches...{Colors.RESET}")
+        print(f"{Colors.GREEN}Analysing {Colors.YELLOW}{total_commits_to_process}{Colors.GREEN} commit patches...{Colors.RESET}")
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
             future_to_repo = {executor.submit(self.process_repo_commits, username, repo): repo for repo in repos}
