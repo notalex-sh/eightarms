@@ -150,6 +150,26 @@ EightArms maintains operational security through several mechanisms:
 - **User Agent Rotation** - Multiple browser identities to avoid fingerprinting
 - **No Persistent Sessions** - Each request appears isolated without correlation markers
 
+#### Network Anonymity Considerations
+
+**Important: EightArms does not provide IP address anonymity or network-level operational security.**
+
+While EightArms maintains application-level anonymity through:
+- Standard HTTP requests without authentication
+- User agent rotation and header randomisation
+- Configurable request timing to mimic human behaviour
+- No persistent session correlation
+
+**Your IP address and network traffic remain visible to GitHub and network monitoring systems.**
+
+For operational security during investigations:
+- **Use a VPN service** to mask your IP address and geographic location
+- Consider using Tor or other anonymity networks for sensitive investigations
+- Implement proper operational security practices including separate investigation infrastructure
+- Be aware that your requests may still be logged by GitHub regardless of EightArms' stealth features
+
+EightArms focuses on avoiding application-level detection and rate limiting, but does not provide network anonymity. Users conducting sensitive investigations must implement their own network-level protection.
+
 ### Result Analysis
 
 Collected email addresses require verification and analysis:
