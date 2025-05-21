@@ -20,7 +20,7 @@ EightArms performs automated reconnaissance on GitHub user accounts by analyzing
 ### Prerequisites
 - Python 3.7 or higher
 - pip package manager
-- a cloned copy of this repo
+- A cloned copy of this repo
 
 ### Setup Process
 ```bash
