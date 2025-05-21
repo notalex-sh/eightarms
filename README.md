@@ -14,7 +14,6 @@ EightArms performs automated reconnaissance on GitHub user accounts by analyzing
 - **Concurrent Processing** - Multi-threaded analysis for efficient large-scale data collection
 - **Rate Limiting Protection** - Built-in delays and retry mechanisms to avoid detection and service disruption
 - **Anonymity Preservation** - Operates through standard HTTP requests without requiring authentication
-- **Context Tracking** - Records source repositories and commit frequency for intelligence analysis
 
 ## Installation
 
