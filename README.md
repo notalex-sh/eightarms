@@ -150,8 +150,8 @@ Collected email addresses require verification and analysis:
 ## Example Operation
 
 ```
-    \    ______
-     \  /      \ 
+         ______
+        /      \ 
        /        \ 
        |        |
     )  o        o   ?        EightArms
