@@ -1,15 +1,16 @@
+```
          ______
         /      \ 
        /        \ 
        |        |
-    )  o        o   ?        **EightArms**
-   (    \      /    |        *GitHub Email Intelligence*
-  * \*__/||||||\___/ _
+    )  o        o   ?        EightArms
+   (    \      /    |        GitHub Email Intelligence
+     \__/||||||\___/ _
    \____/ |||| \____/ `
    ,-.___/ || \__,-._
   /    ___/  \__
      _/         `--
-
+```
 
 An OSINT tool for extracting publicly available email addresses from GitHub repositories through commit history analysis. EightArms enables security researchers and investigators to gather intelligence while maintaining operational anonymity.
 
