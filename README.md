@@ -18,6 +18,8 @@
 
 EightArms performs automated reconnaissance on GitHub user accounts by analyzing publicly accessible commit metadata across their repository ecosystem. The tool extracts email addresses from commit headers, signatures, and collaboration records without requiring authentication or leaving forensic traces.
 
+Learn the [theory](https://www.notalex.sh/blog/githubosint) behind EightArms.
+
 ## Key Capabilities
 
 - **Comprehensive Email Discovery** - Extracts emails from target repositories and associated development networks
